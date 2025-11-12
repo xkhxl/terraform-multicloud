@@ -1,0 +1,42 @@
+# === Terraform related ===
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.tfstate
+.terraform.tfstate.backup
+
+# === Credentials / Keys ===
+gcp-key.json
+aws-credentials.json
+*.pem
+*.key
+*.p12
+*.crt
+
+# === Python / Docker temporary files ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# === System and editor files ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Docker ===
+*.pid
+*.tar
+*.bak
+*.swp
+
+# === Reports (optional if large files) ===
+reports/

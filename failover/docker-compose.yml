@@ -1,0 +1,23 @@
+services:
+  dns-failover:
+    build: .
+    container_name: dns-failover
+    restart: unless-stopped
+    networks:
+      - failover_net
+    ports:
+      - "127.0.0.1:53535:53535/udp"
+      - "127.0.0.1:53535:53535/tcp"
+    environment:
+      AWS_IP: "98.92.236.193"
+      GCP_IP: "136.116.113.101"
+      INTERVAL: "5"
+      TIMEOUT: "2.0"
+      ALERT: "ALL BACKENDS DOWN"
+      DOMAIN_APP: "app.multi.local"
+      DOMAIN_AWS: "aws.multi.local"
+      DOMAIN_GCP: "gcp.multi.local"
+
+networks:
+  failover_net:
+    external: true
