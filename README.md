@@ -39,32 +39,52 @@ Stop AWS instance → traffic switches to GCP automatically!
 **AWS Instance Dashboard**  
   ![AWS Instance Dashboard](./screenshots/aws_instance_dashboard.png)
 
+---
+
 **GCP Instance Dashboard**  
  ![GCP Instance Dashboard](./screenshots/gcp_instance_dashboard.png)
+
+---
 
 **AWS NGINX Output**  
  ![AWS NGINX Output](./screenshots/aws_curl.png)
 
+---
+
 **GCP NGINX Output**  
  ![GCP NGINX Output](./screenshots/gcp_curl.png)
+
+---
 
 **Docker Compose**  
  ![Docker Compose](./screenshots/docker_compose.png)
 
+---
+
 **DNSMasq Configuration**  
  ![DNSMasq Configuration](./screenshots/dnsmasq_inside_container.png)
+
+---
 
 **dig Command (AWS Active)**  
  ![dig Command (AWS Active)](./screenshots/dig_command_aws_active.png)
 
+---
+
 **curl Response (AWS)**  
  ![curl Response (AWS)](./screenshots/curl_local_dns_aws.png)
+
+---
 
 **AWS Instance Stopped**  
  ![AWS Instance Stopped](./screenshots/aws_stoppage.png)
 
+---
+
 **dig Command (After failover)**  
  ![dig Command (After failover)](./screenshots/dig_curl_gcp.png)
+
+---
 
 **Watchdog Log - Switchover Event**  
  ![Watchdog Log - Switchover Event](./screenshots/gcp_switchover_log.png)
